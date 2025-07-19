@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/categories.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="/images/Group 206.png" alt="">
+      <span>Wooden Dreams</span>
+    </div>
+    <nav class="main-nav">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About Us</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/shop.html">Shop</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="header-icons">
+      <a href="#"><img src="/images/material-symbols_search.png"></a>
+            <a href="#"><img src="/images/Group 189.png"></i> </a>
+            <a href="#"><img src="/images/Group 190.png"></i> </a>
+      <button class="signin-btn">Sign Up / Sign In</button>
+    </div>
+  </header>
+
+    <!-- categories -->
+
+    <section class="products-section">
+        <h1>Popular categories</h1> 
+        <p>Organize Your Place , elevate Your Style</p> <br> <br>
+        <div class="grid">
+          <div class="bk1">
+            <div class="card" >
+                <img src="/images/th 1 j.png" alt="">
+            <h3>Recliner</h3>
+            </div></div>
+            <div class="card">
+                <img src="/images/Rectangle 275.png" alt="">
+            <h3>Dining Set</h3>
+            </div>
+            <div class="card">
+                <img src="/images/Rectangle 276.png" alt="">
+            <h3>Decor</h3>
+            </div>
+            <div class="card">
+                <img src="/images/Rectangle 277 p.png" alt="">
+            <h3>Study Table</h3>
+            </div>
+            <div class="card">
+                <img src="/images/Rectangle 279.png" alt="">
+            <h3>Matress</h3>
+            </div>
+            <div class="card">
+                <img src="/images/Rectangle 278.png" alt="">
+            <h3>Beds</h3>
+            </div>
+            <div class="card">
+                <img src="/images/Rectangle 280.png" alt="">
+            <h3>Wardrobesr</h3>
+            </div>
+            <div class="card">
+                <img src="/images/Rectangle 281.png" alt="">
+            <h3>Sofa</h3>
+            </div>
+             <div class="card">
+                <img src="/images/Rectangle 276 h.png" alt="">
+            <h3>Chair</h3>
+            </div>
+             <div class="card">
+                <img src="/images/Rectangle 286 j.png" alt="">
+            <h3> Double Sofa</h3>
+            </div>
+             <div class="card">
+                <img src="/images/Group 206 h.png" alt="">
+            <h3>Sofa</h3>
+            </div>
+             <div class="card">
+                <img src="/images/Images j.png" alt="">
+            <h3>Sofa</h3>
+            </div>
+        </div>
+        </section>
+        <div class="Explore">
+        <p>Explore All</p>
+        </div>
+              
+ <div id="footer-container"></div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+</script>
+</body>
+</html>

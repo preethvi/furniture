@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: gainsboro; padding: 30px; }
+    h1 { text-align: center; }
+    .cart-item {
+      background: rgb(240, 199, 199); margin: 20px auto; padding: 20px; width: 600px;
+      display: flex; justify-content: space-between; align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px;
+    }
+    .item-details { display: flex; align-items: center; }
+    .item-details img {
+      width: 100px; height: 100px; object-fit: cover; margin-right: 20px;
+      border-radius: 10px;
+    }
+    .qty-controls button {
+      padding: 5px 10px; margin: 0 5px; cursor: pointer;
+    }
+    .remove-btn {
+      background: #ff4d4d; border: none; color: white;
+      padding: 10px 15px; border-radius: 5px; cursor: pointer;
+    }
+    #cartTotal {
+      font-size: 20px; font-weight: bold; text-align: right;
+      margin-top: 20px; margin-right: 100px;
+    }
+    .purchase-btn {
+      display: block; margin: 30px auto 0; padding: 10px 20px;
+      background: green; color: white; border: none;
+      border-radius: 5px; font-size: 16px; cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🛒 Your Cart</h1>
+<div id="cartItems"></div>
+<div id="cartTotal"></div>
+<button class="purchase-btn" onclick="goToCheckout()">Purchase</button>
+
+<script>
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function renderCart() {
+    const container = document.getElementById("cartItems");
+    const totalDiv = document.getElementById("cartTotal");
+    container.innerHTML = "";
+
+    if (cart.length === 0) {
+      container.innerHTML = "<p>Your cart is empty.</p>";
+      totalDiv.innerHTML = "";
+      document.querySelector(".purchase-btn").style.display = "none";
+      return;
+    }
+
+    let total = 0;
+
+    cart.forEach((item, index) => {
+      if (!item.qty) item.qty = 1;
+      let itemTotal = item.qty * item.price;
+      total += itemTotal;
+
+      const itemEl = document.createElement("div");
+      itemEl.className = "cart-item";
+      itemEl.innerHTML = `
+        <div class="item-details">
+          <img src="${item.img}" alt="${item.name}">
+          <div>
+            <h3>${item.name}</h3>
+            <p>₹${item.price}</p>
+            <div class="qty-controls">
+              <button onclick="changeQty(${index}, -1)">−</button>
+              <span>${item.qty}</span>
+              <button onclick="changeQty(${index}, 1)">+</button>
+            </div>
+            <p>Total: ₹${itemTotal.toFixed(2)}</p>
+          </div>
+        </div>
+        <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
+      `;
+      container.appendChild(itemEl);
+    });
+
+    totalDiv.innerText = `Total: ₹${total.toFixed(2)}`;
+  }
+
+  function changeQty(index, amount) {
+    if (cart[index].qty + amount >= 1) {
+      cart[index].qty += amount;
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart();
+    }
+  }
+
+  function removeItem(index) {
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart();
+  }
+
+ function goToCheckout() {
+  window.location.href = "checkout.html";
+}
+  renderCart();
+</script>
+
+</body>
+</html>

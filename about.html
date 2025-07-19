@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/about.css">
+</head>
+<body>
+   <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="/images/Group 206.png" alt="">
+      <span>Wooden Dreams</span>
+    </div>
+    <nav class="main-nav">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About Us</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/shop.html">Shop</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="header-icons">
+      <a href="#"><img src="/images/material-symbols_search.png"></a>
+            <a href="#"><img src="/images/Group 189.png"></i> </a>
+            <a href="#"><img src="/images/Group 190.png"></i> </a>
+      <button class="signin-btn">Sign Up / Sign In</button>
+    </div>
+  </header>
+         <section>
+            <div class="containers">
+            <h1>
+                "From Craft to Masterpiece: The Wooden Dreams <br> Journey
+            </h1>
+            <h2>
+                At Wooden Dreams, we don't just create furniture - we craft experiences, blending artistry with precision. What began as a small family workshop has evolved into a world-class factory, rooted in a passion for quality and design. Each piece that leaves our doors tells a story of meticulous craftsmanship, inspired by nature's harmony and the elegance of modern living. <br> <br>
+
+Our journey is driven by a single belief: furniture should elevate not only spaces but also the lives of those who inhabit them. From the finest materials to cutting-edge techniques, we ensure that every creation exudes timeless sophistication."
+            </h2>
+            <img src="/images/Rectangle 281 j.png" alt="">
+            <br>
+            <h1>Designing Legacies: Our Philosophy of Timeless <br> Craftsmanship</h1>
+            <h2>At Wooden Dreams, we believe that furniture is not merely an object; it's the heart of any space. Each piece tells a story—of nature, of the hand that shaped it, and of the vision that brought it to life. Our philosophy is simple yet profound: we create for those who appreciate the art of living. Every detail, from the grain of the wood to the final polish, reflects our dedication to impeccable craftsmanship and design integrity. In our world, luxury is defined by the unseen hours of effort that go into perfecting every line and curve.</h2>
+        <img src="/images/Rectangle 282 j.png" alt="">    
+        </div>
+         </section>
+ <div id="footer-container"></div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+</script>
+</body>
+</html>

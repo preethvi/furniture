@@ -1,0 +1,36 @@
+
+/* categories */
+.products-section{
+    text-align: center;
+}
+.products-section h1{
+    color: #B88E2F;
+    font-size: 38px;
+}
+.products-section p{
+    color: silver;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.Explore{
+    position: relative;
+    left: 90%;
+    color: orange;
+    font-weight: bold;
+}
+
+
+.card {
+      background-color: rgb(253, 233, 219);
+   
+    width: 280px; 
+    padding-top: 18px;
+    padding: 20px 0px;
+    margin: 0 auto; 
+    margin-right: 10px;
+    margin-bottom: 15px;
+}

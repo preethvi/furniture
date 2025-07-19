@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/contact.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="/images/Group 206.png" alt="">
+      <span>Wooden Dreams</span>
+    </div>
+    <nav class="main-nav">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About Us</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/shop.html">Shop</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="header-icons">
+      <a href="#"><img src="/images/material-symbols_search.png"></a>
+            <a href="#"><img src="/images/Group 189.png"></i> </a>
+            <a href="#"><img src="/images/Group 190.png"></i> </a>
+      <button class="signin-btn">Sign Up / Sign In</button>
+    </div>
+  </header>
+    <section>
+        <img src="/images/Group 78.png" alt="">
+        <div class="cnt-title">
+            <h1>Get In Touch With Us</h1>
+            <p>
+                For More Information About Our product & Service . Please Feel Free to Drop Us <br> an Email Our Staff Always Free There To Help You Out . Do Not Hesitate.
+            </p>
+        </div>
+          <div class="contact-container">
+    <!-- Contact Info Box -->
+    <div class="contact-info">
+      <div class="info-box">
+        <!-- <p class="icon">📍</p> -->
+         <img src="/images/p.png" alt="">
+
+        <div>
+          <h2>Address</h2>
+          <h4>298 St8 6th Avenue, New York NY10001, United States</h4>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <!-- <p class="icon">📞</p> -->
+         <img src="/images/bxs_phone.png" alt="">
+        <div>
+          <h2>Phone</h2>
+          <h4>Mobile: (+84) 646-9798<br>Hotline: (+84) 456-7798</h4>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <!-- <p class="icon">🕒</p> -->
+         <img src="/images/bi_clock-fill.png" alt="">
+        <div>
+          <h2>Working Time</h2>
+          <h4>Monday-Friday: 8:00 - 21:00<br>Saturday-Sunday: 9:00 - 20:00</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Box -->
+    <div class="contact-form">
+      <form>
+        <label>Your name</label>
+        <input type="text" placeholder="Abc" required>
+
+        <label>Email address</label>
+        <input type="email" placeholder="abc@gmail.com" required>
+
+        <label>Subject</label>
+        <input type="text" placeholder="This is an optional">
+
+        <label>Message</label>
+        <textarea placeholder="Hi! I'd like to ask about..."></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+    </section>
+         
+ <div id="footer-container">
+   
+ </div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+</script> 
+</body>
+</html>

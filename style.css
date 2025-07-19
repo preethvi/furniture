@@ -1,0 +1,537 @@
+/* Basic Reset & Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif,Poppins; /* You can replace with specific fonts like Poppins, Montserrat etc. */
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.main-header {
+  background-color: #b8892c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
+  padding-right: 10px;
+  
+}
+
+.logo img {
+  width: 100px;
+  padding-right: 15px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 17px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+ 
+  color: white;
+  padding-right: 20px;
+  
+}
+
+.header-icons img {
+  font-size: 13px;
+  margin-left: 15px;
+ 
+  padding-right: 15px;
+}
+
+.signin-btn {
+  background-color: white;
+  color: #b8892c;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  padding-right: 20px;
+  position: relative;
+  left: 30px;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background-image: url('images/beautiful-tan-modern-furniture-1p8lqahjzvgac2vw.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 130vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Pushes content to the right */
+    padding-right: 10%; /* Adjust as per image */
+    position: relative; /* For the blank frames */
+    margin-top: 2%;
+  
+}
+
+.hero-section::before,
+
+
+.hero-section::before {
+    width: 250px; /* Width of the left frame */
+    height: 350px; /* Height of the left frame */
+    left: 10%; /* Adjust position */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-section::after {
+    width: 150px; /* Width of the second left frame */
+    height: 200px; /* Height of the second left frame */
+    left: 35%; /* Adjust position */
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+
+.hero-content .card {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white card */
+    
+    padding: 0 15px ;
+    border-radius: 10px;
+    text-align: left;
+    height: 340px;
+    width: 380px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+    margin-top: -320px;
+   
+   
+   
+}
+.new-arrival{
+    padding-top: 25px;
+}
+
+.hero-content .card .new-arrival {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-content .card h1 {
+    font-size: 30px;
+    color: #B88E2F;
+    padding-left: 8px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.hero-content .card p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.buy-now-btn {
+    background-color: #B88E2F; /* Button color from image */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 30%;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 28px;
+}
+
+.buy-now-btn:hover {
+    background-color: #c09663; /* Darker hover color */
+}
+
+/* Responsive Design (Basic) */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    .nav-links ul li {
+        margin-right: 20px;
+    }
+    .hero-content .card {
+        padding: 30px;
+        max-width: 90%;
+    }
+    .hero-content .card h1 {
+        font-size: 40px;
+    }
+    .hero-section::before,
+    .hero-section::after {
+        display: none; /* Hide frames on smaller screens for simplicity */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 10px;
+    }
+    .nav-links {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .nav-links ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-links ul li {
+        margin: 5px 10px;
+    }
+    .nav-icons {
+        margin-top: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+    .nav-icons a, .sign-in-btn {
+        margin: 0 10px;
+    }
+    .hero-section {
+        justify-content: center;
+        padding-right: 0;
+    }
+    .hero-content .card {
+        text-align: center;
+    }
+    .hero-content .card h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content .card h1 {
+        font-size: 28px;
+    }
+    .hero-content .card p {
+        font-size: 16px;
+    }
+    .buy-now-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+/* categories */
+.products-section{
+    text-align: center;
+}
+.products-section h1{
+    color: #B88E2F;
+    font-size: 38px;
+}
+.products-section p{
+    color: silver;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.Explore{
+    position: relative;
+    left: 90%;
+    color: orange;
+    font-weight: bold;
+}
+
+/* new arrivals */
+.products-section-2{
+    text-align: center;
+}
+.products-section-2 h1{
+    color: #B88E2F;
+    font-size: 38px;
+}
+.products-section-2 p{
+    color: silver;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.card h2 h3{
+    color: black;
+}
+del{
+    color: silver;
+}
+.card1{
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    margin: 0 auto; 
+    padding-bottom: 10px;
+
+}
+.card1 img {
+    max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+
+.discount-badge {
+   position: relative;
+   top: -55%;
+   left: 69%;
+    background-color: #fc9696; /* Reddish background for discount */
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50%; /* Makes it circular */
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Width for circular shape */
+    height: 40px; /* Height for circular shape */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card2 {
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    margin: 0 auto; 
+
+}
+.card3 {
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    margin: 0 auto; 
+
+}
+.card4 {
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    margin: 0 auto; 
+}
+.card5 {
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    margin: 0 auto; 
+}
+.card6 {
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    
+    margin: 0 auto; 
+}
+.card2 img {
+    max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+.card3 img {
+     max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+.card4 img {
+    max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+.card5 img {
+    max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+.card6 img {
+    max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.info{
+    background-color: rgb(242, 246, 248);
+    position: relative;
+    top: -75px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+.products-section-3{
+    text-align: center;
+}
+.products-section-3 h1{
+    color: #B88E2F;
+    font-size: 38px;
+}
+.products-section-3 p{
+    color: silver;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.products-section-3 .discount-badge {
+   position: relative;
+   top: -58%;
+   left: 69%;
+    background-color: rgb(94, 170, 94); /* Reddish background for discount */
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50%; /* Makes it circular */
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Width for circular shape */
+    height: 40px; /* Height for circular shape */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card {
+      background-color: rgb(253, 233, 219);
+   
+    width: 280px; 
+    padding-top: 18px;
+    padding: 20px 0px;
+    margin: 0 auto; 
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+/* reviews */
+.reviews{
+    text-align: center;
+}
+.reviews h1{
+    color: #B88E2F;
+}
+/* Testimonial Section Styling */
+
+
+.testimonial-section .container {
+     /* Max width for the testimonial card */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonial-card {
+    background-color: #FFFDF7; /* Very light cream/off-white background for the card */
+    
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* More prominent shadow */
+    overflow: hidden; /* Ensures image corners are rounded with card */
+    display: flex;
+    flex-direction: column; /* Stacks image and content vertically */
+    align-items: center; /* Centers content horizontally within the card */
+    text-align: center; background-color: rgb(253, 233, 219);
+    padding-top: 50px;
+}
+
+.testimonial-image-container {
+    width: 70%; /* Image container takes full width of the card */
+    height: 200px; /* Fixed height for the image, adjust as needed */
+    overflow: hidden;
+    /* Optional: Add a subtle border-bottom to separate image from text */
+    border-bottom: 1px solid rgba(0,0,0,0.05); 
+}
+
+.testimonial-image {
+    width: 90%;
+    height: 90%;
+    
+    
+}
+
+.testimonial-content {
+    padding: 30px; /* Padding inside the content area */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content elements like quote, stars, author */
+}
+
+.quote {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black; /* Dark gray for text */
+    margin-bottom: 25px; /* Space below the quote */
+    font-weight: bolder;
+}
+
+.rating-and-views {
+    display: flex;
+    justify-content: space-between; /* Pushes stars and views apart */
+    align-items: center;
+    width: 100%; /* Take full width to allow justify-content: space-between */
+    padding: 0 20px; /* Add some horizontal padding inside this container */
+    margin-bottom: 20px; /* Space below this row */
+}
+
+.stars {
+    color: #fdd835; /* Yellow color for stars */
+    font-size: 20px;
+}
+
+.stars .fas.fa-star {
+    margin-right: 2px; /* Small space between stars */
+}
+
+.views {
+    font-size: 14px;
+    color: #888; /* Gray color for views text */
+}
+
+.author-info {
+    font-size: 16px;
+    color: black; /* Medium gray for author info */
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 15px; /* Space above author info */
+}
+
+.author-name {
+    font-weight: bold;
+    display: block; /* Puts name on its own line */
+    margin-bottom: 5px;
+    color: black;
+}
+
+.author-location {
+    font-size: 14px;
+    color: #888;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}

@@ -1,0 +1,503 @@
+
+.side-title{
+    position: relative;
+    top: -260px;
+    left: 17%;
+    
+}
+.side-title h1{
+    font-size: 38px;
+    color: black;
+
+}
+.side-title h3{
+   
+    color: black;
+
+}
+/* --- Product Controls Section Styling - Exact Design --- */
+.product-controls {
+    background-color: rgb(253, 233, 219); /* Light cream background, matching image */
+    padding: 25px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    top: -170px;
+}
+
+.product-controls .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.controls-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+/* Filter Group */
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn i {
+    margin-right: 8px;
+    font-size: 18px;
+    color: black; /* Icon color */
+}
+
+.filter-btn:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.results-info {
+    font-size: 16px;
+    color: black;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+/* Sort and Show Group */
+.sort-show-group {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 15px;
+}
+
+.show-items,
+.sort-by {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-show-group .label {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+.show-input,
+.sort-select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #333;
+    outline: none;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.show-input {
+    width: 60px;
+    text-align: center;
+}
+
+.sort-select {
+    padding-right: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 20px;margin-right: 25px;
+}
+.sub{
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: -170px;
+    padding: 45px;
+}
+/* best seller */
+.products-section-2{
+    text-align: center;
+}
+.products-section-2 h1{
+    color: #B88E2F;
+    font-size: 38px;
+}
+.products-section-2 p{
+    color: silver;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.card h2 h3{
+    color: black;
+}
+del{
+    color: silver;
+}
+.card1{
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    margin: 0 auto; 
+    padding-bottom: 10px;
+
+}
+.card1 img {
+    max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+
+.discount-badge {
+   position: relative;
+   top: -55%;
+   left: 69%;
+    background-color: #fc9696; /* Reddish background for discount */
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50%; /* Makes it circular */
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Width for circular shape */
+    height: 40px; /* Height for circular shape */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card2 {
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    margin: 0 auto; 
+
+}
+.card3 {
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    margin: 0 auto; 
+
+}
+.card4 {
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    margin: 0 auto; 
+}
+.card5 {
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    margin: 0 auto; 
+}
+.card6 {
+      background-color: rgb(253, 233, 219);
+    padding: 25px; 
+    width: 280px; 
+    
+    margin: 0 auto; 
+}
+.card2 img {
+    max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+.card3 img {
+     max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+.card4 img {
+    max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+.card5 img {
+    max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+.card6 img {
+    max-width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.info{
+    background-color: rgb(242, 246, 248);
+    position: relative;
+    top: -75px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+.products-section-3{
+    text-align: center;
+}
+.products-section-3 h1{
+    color: #B88E2F;
+    font-size: 38px;
+}
+.products-section-3 p{
+    color: silver;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.products-section-3 .discount-badge {
+   position: relative;
+   top: -58%;
+   left: 69%;
+    background-color: rgb(94, 170, 94); /* Reddish background for discount */
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50%; /* Makes it circular */
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Width for circular shape */
+    height: 40px; /* Height for circular shape */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.high{
+    position: relative;
+    top: -210px;
+}
+.add-card button{
+    background-color: #B88E2F;
+    color: black;
+    border-radius: 8px;
+    padding: 8px 18px;
+    border: none;
+    background-color: #f0c8c8;
+}
+.cart-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.cart-modal {
+  background: #fff;
+  padding: 30px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.cart-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.purchase-btn, .close-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #B88E2F;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Checkout form */
+.checkout-form {
+  display: none;
+  position: fixed;
+  top: 20%; left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.checkout-form button {
+  width: 100%;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Success message */
+.order-success {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d4edda;
+  color: green;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid green;
+  z-index: 1001;
+}
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -2px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  z-index: 10;
+}
+.cart-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #fffdf7;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cart-container h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #2c2c2c;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.cart-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 25px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #222;
+}
+
+.item-info p {
+  margin: 8px 0;
+  color: #666;
+}
+
+.remove-btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #a30000;
+}
+
+.cart-footer {
+  text-align: right;
+  margin-top: 40px;
+}
+
+.cart-footer h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.checkout-btn {
+  background: #28a745;
+  color: white;
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #1f8a3c;
+}
+button{
+     background: #f3d3d3;
+     border: none;
+     font-size: 15px;
+     padding: 12px 25px;
+     border-radius: 8px;
+     cursor: pointer;
+}
+
+

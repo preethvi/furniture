@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/shop.css">
+    
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="/images/Group 206.png" alt="">
+      <span>Wooden Dreams</span>
+    </div>
+    <nav class="main-nav">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About Us</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/shop.html">Shop</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="header-icons">
+      <a href="#"><img src="/images/material-symbols_search.png"></a>
+            <!-- <a href="#"><img src="/images/Group 189.png"></i> </a> -->
+             
+<a href="cart.html" onclick="openCart()" style="position: relative;">
+  <img src="/images/Group 189.png" alt="Cart">
+  <span id="cartCount" class="cart-count">0</span>
+</a>
+
+              <a href="#"><img src="/images/Group 190.png"></i> </a>  
+  
+
+
+      <button class="signin-btn">Sign Up / Sign In</button>
+    </div>
+  </header>
+    <section>
+        <div class="shop-container">
+            <div class="shop-head">
+              <img src="/images/Rectangle 283j.png" alt="">
+              <div class="side-title">
+              <h1>Shop</h1> 
+              <h3>Home &nbsp;&nbsp;>&nbsp;&nbsp; Shop</h3> 
+            </div></div>
+             
+        </div>
+    </section>
+         
+     <section class="product-controls">
+        <div class="container1">
+            <div class="controls-wrapper">
+                <div class="filter-group">
+                    <button class="filter-btn">
+                        <i class="fas fa-filter"></i> Filter
+                    </button>
+                    <span class="results-info">Showing 1-16 of 32 results</span>
+                </div>
+                <div class="sort-show-group">
+                    <div class="show-items">
+                        <span class="label">Show</span>
+                        <input type="number" value="16" min="1" class="show-input">
+                    </div>
+                    <div class="sort-by">
+                        <span class="label">Sort by</span>
+                        <select class="sort-select">
+                            <option value="default">Default</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="newest">Newest Arrivals</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sub">
+    <h2>Shop by categories</h2></div>
+     <!-- Best sellers -->
+<div class="high">
+<section class="products-section-2">
+        <h1>Best Sellors</h1> 
+        <p>Our most loved pieces</p> <br> <br>
+        <div class="grids">
+           
+            <div class="card1">
+                <img src="/images/image 1.png" alt="">
+                 <span class="discount-badge">-30%</span>
+                 <div class="info">
+            <h2>Syltherine</h2>
+            <p>Stylish Cafe Chair</p>
+            <h3>Rp 2.500.000 &nbsp; <del>Rp 3.500.000</del></p>
+               
+                    <button onclick="addToCart('Syltherine', 2500, '/images/image 1.png')">Add to Cart</button>
+                      
+                 
+            </div></div>
+             <div class="card2">
+                <img src="/images/image 3.png" alt="">
+                 <span class="discount-badge">-50%</span>
+              <div class="info">
+            <h2>Lotito</h2>
+            <p>Luxury Big Sofa</p>
+            <h3>Rp 7.000.000 &nbsp; <del>Rp 14.000.000</del></p>
+                 
+                  <button onclick="addToCart('Lotito', 7000, '/images/image 3.png')">Add to Cart</button>
+            </div></div>
+            <div class="card3">
+                <img src="/images/image 7h.png" alt="">
+                 <span class="discount-badge">-50%</span>
+              <div class="info">
+            <h2>Pinky</h2>
+            <p>Cute Bed Sheet</p>
+            <h3>Rp 7.000.000 &nbsp; <del>Rp 14.000.000</del></p>
+                 <button onclick="addToCart('Pinky', 7000, '/images/image 7h.png')">Add to Cart</button>
+            </div></div>
+            <div class="card4">
+                <img src="/images/Rectangle 286 p.png" alt="">
+                 <span class="discount-badge">-45%</span>
+              <div class="info">
+            <h2>Patio</h2>
+            <p>Cute Bed Sheet</p>
+            <h3>Rp 7.000.000 &nbsp; <del>Rp 14.000.000</del></p>
+                 <button onclick="addToCart('Patio', 7000, '/images/Rectangle 286 p.png')">Add to Cart</button>
+            </div></div>
+            <div class="card5">
+                <img src="/images/Images q.png" alt="">
+                 <span class="discount-badge">-45%</span>
+              <div class="info">
+            <h2>Grifo</h2>
+            <p>Night Lamp</p>
+            <h3>Rp 1.500.000 </p>
+                  <button onclick="addToCart('Grifo', 7000, '/images/Images q.png')">Add to Cart</button>
+            </div></div>
+            <div class="card6">
+                <img src="/images/image 2 h.png" alt="">
+                 <span class="discount-badge">-45%</span>
+             <div class="info">
+            <h2>Livosa</h2>
+            <p>Stylish Cafe Chair</p>
+            <h3>Rp 2.500.000</p>
+                  <button onclick="addToCart('Livosa', 7000, '/images/image 2 h.png')">Add to Cart</button>
+            </div></div>    
+        </div>
+        </section>
+        <div class="Explore">
+            <p>Explore All</p>
+        </div>
+        <section class="products-section-3" >
+             <h1>New Arrivals</h1> 
+        <p>Discover what's New</p> <br> <br>
+        <div class="grids">
+            <div class="card1">
+                <img src="/images/Images i.png" alt="">
+                 <span class="discount-badge">New</span>
+                 <div class="info">
+            <h2>Respira</h2>
+            <p>Outdoor bar table and stool</p>
+            <h3>Rp 500.000 </p>
+                 <button onclick="addToCart('Respira', 7000, '/images/Images i.png')">Add to Cart</button>
+            </div></div>
+             <div class="card2">
+                <img src="/images/image 6 8.png" alt="">
+                 <span class="discount-badge">New</span>
+              <div class="info">
+            <h2>Muggo</h2>
+            <p>Small Mug</p>
+            <h3>Rp 150.000.000 </p>
+                 <button onclick="addToCart('Muggo', 7000, '/images/image 6 8.png')">Add to Cart</button>
+            </div></div>
+            <div class="card3">
+                <img src="/images/Images j.png" alt="">
+                 <span class="discount-badge">New</span>
+              <div class="info">
+            <h2>Potty</h2>
+            <p>Minimalist flower pot</p>
+            <h3>Rp 500.000 </p>
+                  <button onclick="addToCart('Potty', 7000, '/images/Images j.png')">Add to Cart</button>
+            </div></div>
+            <div class="card4">
+                <img src="/images/th 1 j.png" alt="">
+                 <span class="discount-badge">New</span>
+              <div class="info">
+            <h2>Assgard Sofe</h2>
+            <p>Outdoor bar table and stool</p>
+            <h3>Rp 25.000.000 </p>
+                 <button onclick="addToCart('Assgard Sofe', 7000, '/images/th 1 j.png')">Add to Cart</button>
+            </div></div>
+            <div class="card5">
+                <img src="/images/Rectangle 286 j.png" alt="">
+                 <span class="discount-badge">New</span>
+              <div class="info">
+            <h2>Patio</h2>
+            <p>Cute Bed Sheet</p>
+            <h3>Rp 7.000.000 &nbsp; <del>Rp 14.000.000</del></p>
+                  <button onclick="addToCart('Patio', 7000, '/images/Rectangle 286 j.png')">Add to Cart</button>
+            </div></div>
+            <div class="card6">
+                <img src="/images/Rectangle 286 0.png" alt="">
+                 <span class="discount-badge">New</span>
+             <div class="info">
+            <h2>Patio</h2>
+            <p>Cute Bed Sheet</p>
+            <h3>Rp 7.000.000 &nbsp; <del>Rp 14.000.000</del></p>
+               <button onclick="addToCart('Patio', 7000, '/images/Rectangle 286 0.png')">Add to Cart</button>
+            </div></div>    
+        </div></div>
+</section>
+
+<!-- <div class="cart-container">
+  <h2>Your Cart</h2>
+  <div id="cartItems" class="cart-items"></div>
+
+  <div class="cart-footer">
+    <h3>Total: ₹<span id="cartTotal">0</span></h3>
+    <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+  </div>
+</div> -->
+
+
+<!-- Checkout Form -->
+<div class="checkout-form" id="checkoutForm">
+  <h2>Enter Your Details</h2>
+  <input type="text" id="name" placeholder="Name">
+  <input type="email" id="email" placeholder="Email">
+  <textarea id="address" placeholder="Address"></textarea>
+  <button onclick="completeOrder()">Place Order</button>
+</div>
+
+
+
+<script src="script.js"></script>
+ <div id="footer-container"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+</script>
+</body>
+</html>
